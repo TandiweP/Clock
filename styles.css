@@ -11,6 +11,14 @@ body {
     hsl(200, 100%, 50%),
     hsl(175, 100%, 50%)
   );
+  display: flex;
+  /* align horizontal: */
+  justify-content: center;
+  align-items: center;
+  /* align vertical: */
+  min-height: 100vh;
+  /* remove scrollbar: */
+  overflow: hidden;
 }
 
 .clock {
@@ -29,6 +37,7 @@ body {
   height: 100%;
   text-align: center;
   transform: rotate(var(--rotation));
+  font-size: 1.5rem;
 }
 
 .clock .number1 {
